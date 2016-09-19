@@ -12,8 +12,7 @@
 		310C29991D90324200E75065 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310C29971D90324200E75065 /* Main.storyboard */; };
 		310C299B1D90324200E75065 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 310C299A1D90324200E75065 /* Assets.xcassets */; };
 		310C299E1D90324200E75065 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310C299C1D90324200E75065 /* LaunchScreen.storyboard */; };
-		310C29A91D90324200E75065 /* DYZBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310C29A81D90324200E75065 /* DYZBTests.swift */; };
-		310C29B41D90324200E75065 /* DYZBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310C29B31D90324200E75065 /* DYZBUITests.swift */; };
+		6D97E6ABF69D4EE22460079D /* libPods-DYZB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A69430EF6E4BA6446D3CDB76 /* libPods-DYZB.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +41,10 @@
 		310C299D1D90324200E75065 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		310C299F1D90324200E75065 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		310C29A41D90324200E75065 /* DYZBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYZBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		310C29A81D90324200E75065 /* DYZBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYZBTests.swift; sourceTree = "<group>"; };
-		310C29AA1D90324200E75065 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		310C29AF1D90324200E75065 /* DYZBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYZBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		310C29B31D90324200E75065 /* DYZBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYZBUITests.swift; sourceTree = "<group>"; };
-		310C29B51D90324200E75065 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64DDEC34EABBE822962E76DD /* Pods-DYZB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYZB.release.xcconfig"; path = "Pods/Target Support Files/Pods-DYZB/Pods-DYZB.release.xcconfig"; sourceTree = "<group>"; };
+		A69430EF6E4BA6446D3CDB76 /* libPods-DYZB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DYZB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD9E491EC8BB185081335A3B /* Pods-DYZB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYZB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DYZB/Pods-DYZB.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D97E6ABF69D4EE22460079D /* libPods-DYZB.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +73,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01D5CEBA5296ACB0E429A008 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD9E491EC8BB185081335A3B /* Pods-DYZB.debug.xcconfig */,
+				64DDEC34EABBE822962E76DD /* Pods-DYZB.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		310C29871D90324200E75065 = {
 			isa = PBXGroup;
 			children = (
 				310C29921D90324200E75065 /* DYZB */,
-				310C29A71D90324200E75065 /* DYZBTests */,
-				310C29B21D90324200E75065 /* DYZBUITests */,
 				310C29911D90324200E75065 /* Products */,
+				01D5CEBA5296ACB0E429A008 /* Pods */,
+				C1E370095381814E40A728D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,22 +115,12 @@
 			path = DYZB;
 			sourceTree = "<group>";
 		};
-		310C29A71D90324200E75065 /* DYZBTests */ = {
+		C1E370095381814E40A728D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				310C29A81D90324200E75065 /* DYZBTests.swift */,
-				310C29AA1D90324200E75065 /* Info.plist */,
+				A69430EF6E4BA6446D3CDB76 /* libPods-DYZB.a */,
 			);
-			path = DYZBTests;
-			sourceTree = "<group>";
-		};
-		310C29B21D90324200E75065 /* DYZBUITests */ = {
-			isa = PBXGroup;
-			children = (
-				310C29B31D90324200E75065 /* DYZBUITests.swift */,
-				310C29B51D90324200E75065 /* Info.plist */,
-			);
-			path = DYZBUITests;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 310C29B81D90324200E75065 /* Build configuration list for PBXNativeTarget "DYZB" */;
 			buildPhases = (
+				C928EC9EBBDC2980B5EFB40F /* 📦 Check Pods Manifest.lock */,
 				310C298C1D90324200E75065 /* Sources */,
 				310C298D1D90324200E75065 /* Frameworks */,
 				310C298E1D90324200E75065 /* Resources */,
+				08C98AFA421D3952F22F9C33 /* 📦 Embed Pods Frameworks */,
+				60396603501C871E5334C00D /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,6 +258,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08C98AFA421D3952F22F9C33 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYZB/Pods-DYZB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60396603501C871E5334C00D /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYZB/Pods-DYZB-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C928EC9EBBDC2980B5EFB40F /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		310C298C1D90324200E75065 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -271,7 +320,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				310C29A91D90324200E75065 /* DYZBTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +327,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				310C29B41D90324200E75065 /* DYZBUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +383,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -358,7 +406,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -386,6 +434,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -402,7 +451,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -413,27 +462,35 @@
 		};
 		310C29B91D90324200E75065 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD9E491EC8BB185081335A3B /* Pods-DYZB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 65SR839NQ3;
 				INFOPLIST_FILE = DYZB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Via.DYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		310C29BA1D90324200E75065 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64DDEC34EABBE822962E76DD /* Pods-DYZB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 65SR839NQ3;
 				INFOPLIST_FILE = DYZB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Via.DYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -514,6 +571,7 @@
 				310C29BA1D90324200E75065 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		310C29BB1D90324200E75065 /* Build configuration list for PBXNativeTarget "DYZBTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +580,7 @@
 				310C29BD1D90324200E75065 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		310C29BE1D90324200E75065 /* Build configuration list for PBXNativeTarget "DYZBUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +589,7 @@
 				310C29C01D90324200E75065 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
